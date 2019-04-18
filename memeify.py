@@ -1,7 +1,7 @@
 import discord
 import random
 
-TOKEN = input("Enter your bot token: ")
+token = input("Enter your bot token: ")
 RANDOM_EMOJIS = [':ok_hand:', ':100:', ':banana:', ':monkey_face:', ':sunglasses:', ':thinking:', ':yum:', ':weary:', ':poop:', ':smiling_imp:', ':scream_cat:']
 
 client = discord.Client()
@@ -29,4 +29,4 @@ def log(message, meme_text):
     print(f"[INFO] -- User: {message.author} inputted: {message.content}")
     print(f"[INFO] -- User: {message.author} got output: {meme_text}")
 
-client.run(TOKEN)
+client.run(token)
